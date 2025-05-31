@@ -17,7 +17,10 @@
     "recharts": "^2.9.0",
     "@tremor/react": "^3.10.0",
     "date-fns": "^2.30.0",
-    "zustand": "^4.4.6"
+    "zustand": "^4.4.6",
+    "@visx/risk": "^3.3.0",
+    "technicalindicators": "^3.1.0",
+    "newsapi": "^2.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

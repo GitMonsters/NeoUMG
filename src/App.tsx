@@ -3,6 +3,10 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { TechnicalAnalysis } from './modules/technical/TechnicalAnalysis';
 import { FundamentalAnalysis } from './modules/fundamental/FundamentalAnalysis';
 import { SentimentAnalysis } from './modules/sentiment/SentimentAnalysis';
+import { PortfolioManagement } from './modules/portfolio/PortfolioManagement';
+import { RiskAnalysis } from './modules/risk/RiskAnalysis';
+import { NewsAggregation } from './modules/news/NewsAggregation';
+import { AlgorithmicSignals } from './modules/algorithmic/AlgorithmicSignals';
 
 const queryClient = new QueryClient();
 
@@ -24,9 +28,13 @@ function App() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <PortfolioManagement />
             <TechnicalAnalysis symbol={symbol} />
             <FundamentalAnalysis symbol={symbol} />
+            <RiskAnalysis symbol={symbol} />
             <SentimentAnalysis symbol={symbol} />
+            <NewsAggregation symbol={symbol} />
+            <AlgorithmicSignals symbol={symbol} />
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import { PortfolioManagement } from './modules/portfolio/PortfolioManagement';
 import { RiskAnalysis } from './modules/risk/RiskAnalysis';
 import { NewsAggregation } from './modules/news/NewsAggregation';
 import { AlgorithmicSignals } from './modules/algorithmic/AlgorithmicSignals';
+import { PricePrediction } from './modules/prediction/PricePrediction';
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ function App() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <PricePrediction symbol={symbol} />
             <PortfolioManagement />
             <TechnicalAnalysis symbol={symbol} />
             <FundamentalAnalysis symbol={symbol} />
